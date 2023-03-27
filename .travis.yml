@@ -2,6 +2,12 @@ language: java
 jdk:
   - oraclejdk8
 before_install:
+  - chmod +x build.sh
+  - chmod +x remap.sh
+  - chmod +x decompile.sh
+  - chmod +x init.sh
+  - chmod +x newapplypatches.sh
+  - chmod +x paperclip.sh
   - git config --global user.email "travis-ci@destroystokyo.com"
   - git config --global user.name "Travis CI"
   - git submodule update --init
